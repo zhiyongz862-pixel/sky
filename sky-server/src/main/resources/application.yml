@@ -16,6 +16,7 @@ spring:
 mybatis:
   #mapper配置文件
   mapper-locations: classpath:mapper/*.xml
+#  已经扫描了所有的实体包，那么在mybatis文件中就需要再写文件夹名了，直接写包名即可
   type-aliases-package: com.sky.entity
   configuration:
     #开启驼峰命名
